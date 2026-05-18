@@ -1,7 +1,5 @@
 # Local Builds Scheduler
 
-##Copyright 2026 Silviu-Marius Ardelean
-
 A small, pragmatic builds queue runner for developers working with large repositories and long-running builds.
 
 The goal is simple: run heavy local build jobs one after another, usually overnight, without wasting hardware resources by running multiple expensive builds in parallel.
@@ -246,3 +244,7 @@ Avoid turning it into a complex CI system too early.
 Early planning stage.
 
 Initial implementation will be a Python CLI tool using YAML configuration.
+
+---
+
+© 2026 Silviu-Marius Ardelean. Licensed under the [Apache-2.0 License](LICENSE).

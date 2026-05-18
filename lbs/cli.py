@@ -9,23 +9,30 @@ Entry point: lbs.cli:main
 """
 
 import argparse
+import sys
 
 from lbs import __version__
 
 
 def cmd_run(args: argparse.Namespace) -> None:
     """Handle the 'lbs run <config>' subcommand."""
-    print("not implemented")
+    # TODO: implement job execution from config file
+    print("lbs run: not implemented", file=sys.stderr)
+    sys.exit(1)
 
 
 def cmd_validate(args: argparse.Namespace) -> None:
     """Handle the 'lbs validate <config>' subcommand."""
-    print("not implemented")
+    # TODO: implement YAML config validation
+    print("lbs validate: not implemented", file=sys.stderr)
+    sys.exit(1)
 
 
 def cmd_list(args: argparse.Namespace) -> None:
     """Handle the 'lbs list <config>' subcommand."""
-    print("not implemented")
+    # TODO: implement job listing from config file
+    print("lbs list: not implemented", file=sys.stderr)
+    sys.exit(1)
 
 
 def build_parser() -> argparse.ArgumentParser:

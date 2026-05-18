@@ -16,6 +16,7 @@ def test_help_exits_cleanly():
         [sys.executable, "-m", "lbs", "--help"],
         capture_output=True,
         text=True,
+        timeout=10,
     )
     assert result.returncode == 0
 
@@ -26,6 +27,7 @@ def test_help_mentions_lbs():
         [sys.executable, "-m", "lbs", "--help"],
         capture_output=True,
         text=True,
+        timeout=10,
     )
     assert "lbs" in result.stdout
 
@@ -36,6 +38,7 @@ def test_help_lists_subcommands():
         [sys.executable, "-m", "lbs", "--help"],
         capture_output=True,
         text=True,
+        timeout=10,
     )
     assert "run" in result.stdout
     assert "validate" in result.stdout
