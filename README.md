@@ -244,3 +244,7 @@ Avoid turning it into a complex CI system too early.
 Early planning stage.
 
 Initial implementation will be a Python CLI tool using YAML configuration.
+
+---
+
+© 2026 Silviu-Marius Ardelean. Licensed under the [Apache-2.0 License](LICENSE).
